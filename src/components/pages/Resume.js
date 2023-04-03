@@ -1,5 +1,5 @@
 import React from 'react';
-import ResumeTonyDandino from '././pdf/Tony_Dandino_Resume.pdf';
+import ResumeAnthonyDandino from '../../pdf/Anthony_Dandino_Resume.pdf';
 
 
 const styles = {
@@ -23,7 +23,7 @@ export default function Resume() {
     <div style={styles.space}>
       <h2 style={styles.h2}>Resume</h2>
       <p style={styles.h2}>
-        <a style={styles.link} href={ResumeTonyDandino} download>
+        <a style={styles.link} href={ResumeAnthonyDandino} download>
           Download Full Resume
         </a>
       </p>
@@ -52,90 +52,40 @@ export default function Resume() {
       <p>
         <h4>General Manager for Cheshire Hotel</h4>
         <h5>St. Louis, Mo 63117</h5>
-        (04/2011 – 4/2023)
+        (04/2012 – 4/2023)
         <ul>
           <li>
             Responsible for the overall management of the hotel, including all operations and restaurants.
           </li>
           <li>
-            Creates
+            Creates overall performance and development
           </li>
           <li>
-            Designed and implemented over 50 technology classes for library
-            patrons, resulting in an increase in digital literacy skills among
-            attendees.
+            Creates a postive work envirnonment which thrives on teamwork and being productive while maintaining costs
           </li>
           <li>
-            Provided personalized reference services to patrons at the Info Desk
-            to determine their information needs and deliver tailored solutions,
-            promoting the use of library resources and technology.
+            Manages all sales records, conrollable expesnes and cost items affecting the profibility of the hotel
           </li>
         </ul>
       </p>
       <p>
-        <h4>Library Assistant – Cataloging</h4>
-        <h5>Whitman College, Walla Walla, WA</h5>
-        (6/2014- 4/2016)
+        <h4>Food and Beverage Director</h4>
+        <h5>Hilton St. Louis Airport</h5>
+        (1/2010 - 4/2012)
         <ul>
           <li>
-            Improved the accessibility and organization of library materials by
-            cataloging over 13,000 items in the III and Alma Database using copy
-            and original cataloging methods.
+            Ensured guest  service standards through prompt, efficient, and friendly service.
           </li>
           <li>
-            Played an integral role in the supervision and professional
-            development of a team of three student workers, providing guidance
-            and support to ensure the success of both the workers and the
-            library.
+            Coordinated Standard Operation Procedures to departments to ensure proceses and workflow.
           </li>
           <li>
-            Conducted a comprehensive weeding project of the government
-            documents collection, removing outdated and irrelevant materials and
-            making space for other collections.
+            Operated department within budget for food, beverage, labor, and controllable expenses.
+          </li>
+          <li>
+            Led and executed all company initiatives ensuring sales and profibility goals were executed.
           </li>
         </ul>
-      </p>
-      <p>
-        <h4>Library Assistant</h4>
-        <h5>Whitman County Library, Colfax, WA</h5>
-        (5/2008 - 5/2014)
-        <ul>
-          <li>
-            Improved the accessibility and organization of library materials by
-            cataloging over 5,000 items in the Horizon Database using copy and
-            original cataloging methods.
-          </li>
-          <li>
-            Managed a collection of over 5,000 popular movies, music, and
-            eBooks, ensuring timely acquisition and removal of materials to keep
-            the collection up-to-date and relevant for library users.
-          </li>
-          <li>
-            Designed and implemented over 30 technology classes for library
-            patrons, resulting in an increase in digital literacy skills among
-            attendees.
-          </li>
-          <li>
-            Provided personalized reference services to patrons at the reference
-            and circulation desk to determine their information needs and
-            deliver tailored solutions, promoting the use of library resources
-            and technology.
-          </li>
-        </ul>
-      </p>
-      <h3 style={styles.h3}>Education</h3>
-      <p>
-        <h4>Coding Bootcamp Certificate of Completion (2/2023)</h4>
-        University of Washington Professional & Continuing Education, Seattle,
-        WA
-      </p>
-      <p>
-        <h4>Master of Library and Information Science (5/2014)</h4>
-        San José State University, San José, CA
-      </p>
-      <p>
-        <h4>Bachelor of Arts in Literature (3/2008)</h4>
-        The Evergreen State College, Olympia, WA
       </p>
     </div>
   );
