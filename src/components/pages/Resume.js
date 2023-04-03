@@ -1,5 +1,5 @@
 import React from 'react';
-import ResumeTonyDandino from '../../pdf/Tony_Dandino_Resume.pdf';
+import ResumeTonyDandino from '././pdf/Tony_Dandino_Resume.pdf';
 
 
 const styles = {
