@@ -5,8 +5,7 @@ import Notetaker from '../../img/Notetaker.png';
 import Winevybe from '../../img/Winevybe.png';
 import EmployeeTracker from '../../img/EmployeeTracker.png';
 
-
-// import "../../style/portfolio.css";
+import "../../style/portfolio.css";
 
 const styles = {
   h2: {
