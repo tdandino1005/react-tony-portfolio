@@ -1,22 +1,125 @@
-import React from 'react';
+import React, { useState } from "react";
 
-export default function Contact() {
+import { validateEmail } from "../../utils/helpers";
+
+const styles = {
+  h2: {
+    textAlign: "center",
+  },
+  form: {
+    textAlign: "center",
+  },
+  email: {
+    textAlign: "center",
+    color: "#0000FF",
+  },
+  input: {
+    margin: "0.75rem",
+  },
+  inputa: {
+    height: "5rem",
+  },
+};
+
+function Form() {
+  const [email, setEmail] = useState("");
+  const [Name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
+
+  const handleInputChange = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    if (inputType === "email") {
+      setEmail(inputValue);
+    } else if (inputType === "Name") {
+      setName(inputValue);
+    } else {
+      setMessage(inputValue);
+    }
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    if (!validateEmail(email)) {
+      alert("Email is not valid");
+      return;
+    }
+
+    if (!Name) {
+      alert("Field is Required");
+      return;
+    }
+
+    if (!message) {
+      alert("Field is Required");
+      return;
+    }
+
+    if (email || Name || message) {
+      setSuccessMessage("Form Successfully Submitted!");
+      return;
+    }
+
+    setName("");
+    setMessage("");
+    setEmail("");
+  };
+
   return (
     <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+      <h2 style={styles.h2}>Contact</h2>
+      <div style={styles.email}>
+        <a href="mailto:tdandino1005@gmail.com">tdandino1005@gmail.com</a>
+      </div>
+      <form action="mailto:tdandino1005@gmail.com" method= "post" encType="text/plain" style={styles.form} className="form">
+        <div style={styles.input}>
+          <input
+            value={email}
+            name="email"
+            onChange={handleInputChange}
+            type="email"
+            placeholder="email"
+            required
+          />
+        </div>
+        <div style={styles.input}>
+          <input
+            value={Name}
+            name="Name"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="name"
+            required
+          />
+        </div>
+        <div style={styles.input}>
+          <input
+            style={styles.inputa}
+            value={message}
+            name="message"
+            onChange={handleInputChange}
+            type="message"
+            placeholder="message"
+            required
+          />
+        </div>
+        <div>
+          <button type="button" onClick={handleFormSubmit}>
+            Submit
+          </button>
+        </div>
+      </form>
+      {successMessage && (
+        <div style={styles.form}>
+          <p className="success-text">{successMessage}</p>
+        </div>
+      )}
     </div>
   );
 }
+
+export default Form;
