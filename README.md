@@ -27,24 +27,6 @@ This project is a Portfolio showing about myself, my contact information, my cur
 
 Webpage: https://github.com/tdandino1005/react-tony-portfolio
 
-Screenshots:
-
-Homepage / About Me
-![Screenshot](assets/img/screenshot_1.png)
-
-
-Portfolio
-![Screenshot](assets/img/screenshot_2.png)
-
-
-Contact Me
-![Screenshot](assets/img/screenshot_3.png)
-
-
-Resume
-![Screenshot](assets/img/screenshot_4.png)
-
-
 ## Contributing:
 N/A
 
