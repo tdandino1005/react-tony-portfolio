@@ -2,7 +2,7 @@
 
 ## Table of Contents 
 - [User Story](#user-story)
-- [Screenshots] (#screenshots)
+- [Screenshots](#screenshots)
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
