@@ -2,12 +2,24 @@
 
 ## Table of Contents 
 - [User Story](#user-story)
+- [Screenshots] (#screenshots)
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/114967217/235832285-15e02ab3-7d32-4529-811e-c5d544f80dd2.png)
+
+![image](https://user-images.githubusercontent.com/114967217/235832412-2bf39be2-dbca-49e7-bf11-3235567cc3d2.png)
+
+![image](https://user-images.githubusercontent.com/114967217/235832484-03dd2508-c37a-4e41-bd37-a27af146c142.png)
+
+
+
 
 ## User Story:
 AS AN employer looking for candidates with experience building single-page applications
