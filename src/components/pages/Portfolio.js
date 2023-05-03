@@ -4,6 +4,7 @@ import FoodFinder from '../../img/FoodFinder.png';
 import Notetaker from '../../img/Notetaker.png';
 import Winevybe from '../../img/Winevybe.png';
 import EmployeeTracker from '../../img/EmployeeTracker.png';
+import PWA from '../../img/PWA.png';
 
 import "../../style/portfolio.css";
 
@@ -164,6 +165,32 @@ export default function Portfolio() {
             <p style={styles.space}>
             This application is designed to create a space for wine collectors to come together and create a profile. 
             They will be able to keep tabs and update their wine collection as they expand their inventory and pallets.
+            </p>
+          </section>
+
+          <section className="card col-sm-3 p-0 m-2">
+            <a
+              href="https://serene-fjord-47597.herokuapp.com/"
+              target="blank"
+            >
+              <img
+                className="card-img-top"
+                src={PWA}
+                alt="Screenshot of text editor"
+              />
+              <header>
+                <h3 style={styles.header}>PWA text editor</h3>
+              </header>
+            </a>
+            <a
+              style={styles.repo}
+              href="https://github.com/tdandino1005/PWA-text-editor"
+              target="blank"
+            >
+              GitHub Repository
+            </a>
+            <p style={styles.space}>
+            This application takes an existing text editor app and adds functionality for it to work as a PWA and function offline. 
             </p>
           </section>
         </div>
